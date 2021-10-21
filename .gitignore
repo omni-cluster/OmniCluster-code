@@ -1,0 +1,96 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Python template
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+other_dataset
+src_for_other_dataset
+src/backup/cal_distance
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit src_for_other_dataset / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+
+# Flask stuff:
+processed/
+matlab/
+OMI_dataset/
+figure/*
+OMI_dataset_part/
+*.h5
+*.npy
+
+.idea
+movingAverage/
+origin_processed/
+
+figure_origin/
+plot_metric.py
+score.txt
+sse.txt
+.ipynb_checkpoints
+data/
+origin_data/
+save_data/
+result/
+src/tem_code
+*.txt
+*.csv
+*.xlsx
+*.png
+*.svg
+*.zip
+.vscode/
+model/
+*.npy
+*.json
