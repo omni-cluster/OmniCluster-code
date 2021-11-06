@@ -31,13 +31,13 @@ def sbd(x, y):
     for s in range(-m + 1, m):
         tmp_norm_cc_list = []
         if s >= 0:
-            y_s = np.hstack((np.zeros((index_num, s)), y[:, :m - s]))
+            # y_s = np.hstack((np.zeros((index_num, s)), y[:, :m - s]))
             tmp_norm_cc_list.append(
-                np.sum(np.multiply(x[:, s:], y_s[:, :m - s]), axis=1) / (x_norm * np.linalg.norm(y_s, axis=1)))
+                np.sum(np.multiply(x[:, s:], y[:, :m - s]), axis=1) / (x_norm * np.linalg.norm(y_s, axis=1)))
         else:
-            y_s = np.hstack((y[:, -s:], np.zeros((index_num, -s))))
+            # y_s = np.hstack((y[:, -s:], np.zeros((index_num, -s))))
             tmp_norm_cc_list.append(
-                np.sum(np.multiply(x[:, :m + s], y_s[:, -s:]), axis=1) / (x_norm * np.linalg.norm(y_s, axis=1)))
+                np.sum(np.multiply(x[:, :m + s], y[:, -s:]), axis=1) / (x_norm * np.linalg.norm(y_s, axis=1)))
         norm_cc = np.sum(tmp_norm_cc_list)
         norm_cc_list.append(norm_cc)
     ncc = np.max(norm_cc_list)
